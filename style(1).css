@@ -1,0 +1,878 @@
+/*
+Theme Name:     Kosmo
+Theme URI: 		http://themeforest.net/user/tagDiv/portfolio
+Description:    Child theme for Newsmag
+Author:         tagDiv
+Author URI: 	http://themeforest.net/user/tagDiv/portfolio
+Template:       Newsmag                             
+Version:        3.3c
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+	
+	Child Them eSUpport Info for Newsmag: https://forum.tagdiv.com/the-child-theme-support-tutorial/
+*/
+
+iframe {
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Seite linksbündig */
+@media (min-width: 767px) {
+	.td-header-container {
+		width: 1021px;
+		margin-right: auto;
+		margin-left: 15px!important;
+	}
+	
+	.td-container {
+		width: 1021px;
+		margin-right: auto;
+		margin-left: 15px!important;
+	}
+	
+	.td-footer-container {
+		margin-right: auto;
+		margin-left: 15px!important;
+	}
+	
+	.td-sub-footer-container {
+		margin-right: auto;
+		margin-left: 15px!important;
+	}
+
+
+}
+
+/* Social Icons im Header */
+
+.td-header-style-1 .td-header-top-menu {
+    padding: 3px 12px 3px 35px!important; /* Ausrichtung zum Logo */
+}
+
+.td-header-top-menu .td-social-icon-wrap i {
+    text-align: center;
+    font-size: 14px;
+    width: 24px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    width: 28px;
+    height: 28px;
+}
+
+.td-header-top-menu .td-social-icon-wrap .td-icon-facebook {
+    background-color: #3B5998;
+}
+
+.td-header-top-menu .td-social-icon-wrap .td-icon-instagram {
+    background-color: #3f729b;
+}
+
+.td-header-top-menu .td-social-icon-wrap .td-icon-twitter {
+    background-color: #00aced;
+}
+
+.td-header-top-menu .td-social-icon-wrap .td-icon-youtube {
+    background-color: #bb0000;
+}
+
+.td-header-sp-top-widget i:hover {
+    background-color: #222!important;
+    color: #fff!important;
+}
+
+/* Social Icons im Footer */
+
+.td-social-icon-wrap i {
+    color: #fff!important;
+}
+
+.footer-social-wrap .td-icon-facebook {
+    background-color: #3B5998;
+}
+
+.footer-social-wrap .td-icon-instagram {
+    background-color: #3f729b;
+}
+
+.footer-social-wrap .td-icon-twitter {
+    background-color: #00aced;
+}
+
+.footer-social-wrap .td-icon-youtube {
+    background-color: #bb0000;
+}
+
+.td-social-icon-wrap:hover i {
+    background-color: #222!important;
+    color: #fff!important;
+}
+
+.top-bar-style-2 .td-header-sp-top-menu {
+    float: right;
+    margin-top: 5px;
+}
+
+/* Submit-Buttons in Kosmo-Rot */
+
+input[type=submit] {
+    background-color: #ad181a;
+    color: #ffffff;
+}
+
+/* Linie nach Block_Titel */
+.block-title {
+    display: block;
+    line-height: 20px;
+    margin: 20px 0!important;
+	
+	padding-left: 20px;
+    padding-right: 19px;
+}
+
+h4.block-title:after {
+    content: '';
+    display: block;
+    height: 1px;
+    position: relative;
+    background-color: rgb(173, 24, 26);
+    top: -3px;
+}
+
+.widget .block-title {
+	padding: 0!important;
+}
+
+.block-title.td-trending-now-title {
+	margin: 0 21px 0 0!important;
+}
+
+/* Subtitel in Blöcken */
+.sub-title {
+    font-family: Open Sans,arial,sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 19px;
+    color: #ad181a;
+    margin: 0;
+}
+
+.td_module_mx1 .sub-title {
+    margin: 0 0 0.8em.0;
+}
+.td_module_trending_now .sub-title {
+	display: inline-block;
+	color: #111111;
+	float: left;
+    font-size: 12px;
+	line-height: 20px;
+}
+
+.td_module_trending_now .sub-title:after {
+	content: ":\00A0"; /* Leerzeichen im Newsticker */
+}
+
+/* Abstand für Subtitel im Big Grid */
+
+.td_block_big_grid h5 {
+	color: #FFFFFF!important;
+	padding: 10px 0 0px 0;
+	/*display: none!important;*/
+}
+
+/* Kein Datum im Big Grid */
+
+.td_block_big_grid .td-post-date {
+	display: none!important;	
+}
+
+/* Kategorienamen rot im Big Grid */
+
+.td_block_big_grid .td-post-category {
+	background-color: #ad181a!important;
+    color: #ffffff!important;
+}
+
+/* Textschatten im Big Grid */
+
+.td-big-grid-post .entry-title {
+    text-shadow: 0px 0px 7px rgba(0,0,0,0.85)!important;
+}
+
+/* Volle Breite am Handy bei Artikeln im Big Grid */
+.td_block_big_grid .td-big-thumb {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 4px;
+    float: none;
+    height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .td_block_big_grid .td-tiny-thumb .entry-title {
+		font-size: 20px!important;
+		line-height: 26px!important;
+		margin-bottom: 6px;
+	}
+}
+
+@media (max-width: 767px) {
+	.td_block_big_grid .td-tiny-thumb {
+		width: 100%!important;
+		min-height: 180px!important;
+		height: 20vh!important;
+		max-height: 500px!important;
+	}
+	.td_block_big_grid .td-tiny-thumb .entry-title,
+	.td_block_big_grid.td-grid-style-1 .td-tiny-thumb .entry-title {
+		font-size: 20px!important;
+		line-height: 26px!important;
+		margin-bottom: 6px;
+	}
+	
+	.td_block_big_grid .td-post-category {
+		display: none;
+	}
+	.td_block_big_grid h5.sub-title {
+		color: #FFFFFF!important;
+		padding: 2px 5px 2px 5px;
+		background-color: #ad181a!important;
+		display: inline-block;
+	}
+	
+	.td_block_big_grid .td-big-grid-post-1, 
+	.td_block_big_grid .td-big-grid-post-2,
+	.td_block_big_grid .td-big-grid-post-3,
+	.td_block_big_grid .td-big-grid-post-4 {
+		margin-bottom: 4px;
+	}
+}
+
+
+/* Kein Datum in Blöcken auf der Startseite */
+
+.home .td-pb-row .td-post-date {
+	display: none!important;	
+}
+
+/* Kein Kategorienamen in allen Bildern AUSSER im Big Grid */
+
+.td_block_wrap:not(.td_block_big_grid) .td-module-image .td-post-category {
+	display: none!important;	
+}
+
+
+
+/* Single Post: Abstand im Header */
+
+.single .post header {
+	padding: 1em 0 2em 0;
+}
+
+.single .post header h1 {
+    font-weight: bold;
+    margin: 10px 0 15px 0;
+}
+
+/* Single Post: Datum in Subtitel rechtsbündig */
+
+.single .post h5.sub-title span {
+	font-weight: normal;
+	color: #222;
+	display: inline-block;
+	float: right;
+}
+
+.single .post .td-post-date {
+	display: none;
+}
+
+/* Kategorie Archive: kein Dropdown für Subkartegorien, kein Filter, keine Geschwister */
+
+.category.archive .td-subcat-dropdown,
+.category.archive .td-category-pulldown-filter, 
+.category.archive .td-category-siblings {
+	display: none!important;
+}
+
+/* Kategorie Archive: Datum ausblenden */
+
+.category.archive .td_module_wrap .meta-info {
+	display: none!important;
+}
+
+
+/* Blockquotes / Zitate */
+
+.td-page-content blockquote:not(.instagram-media), 
+.td-post-content blockquote:not(.instagram-media), 
+.td-page-content blockquote.wp-block-quote, 
+.td-post-content blockquote.wp-block-quote,
+.mce-content-body blockquote:not(.instagram-media), 
+.mce-content-body blockquote.wp-block-quote, 
+.comment-content blockquote:not(.instagram-media),
+
+.wp-block blockquote, .wp-block .wp-block-freeform.block-library-rich-text__tinymce blockquote, .wp-block blockquote.wp-block-quote, .wp-block .wp-block-freeform.block-library-rich-text__tinymce blockquote.wp-block-quote {
+   padding: 0.5em 2em 0.5em 2em;
+   
+   border-top: 2px solid #ad181a;
+   border-bottom: 2px solid #ad181a;
+}
+
+.td-page-content blockquote:not(.instagram-media) p, 
+.td-post-content blockquote:not(.instagram-media) p, 
+.mce-content-body blockquote:not(.instagram-media) p, 
+.comment-content blockquote:not(.instagram-media) p,
+.td-page-content blockquote.wp-block-quote p, 
+.td-post-content blockquote.wp-block-quote p, 
+.mce-content-body blockquote.wp-block-quote p,
+
+.wp-block blockquote p, .wp-block .wp-block-freeform.block-library-rich-text__tinymce blockquote p, .wp-block blockquote.wp-block-quote p, .wp-block .wp-block-freeform.block-library-rich-text__tinymce blockquote.wp-block-quote p {
+    font-family: Roboto Condensed,sans-serif!important;
+    font-size: 28px!important;
+    line-height: 36px!important;
+    font-weight: 400!important;
+    font-style: italic!important;
+    text-align: center!important;
+    text-transform: none!important;
+    color: #ad181a;
+	
+    
+    padding: 1em 0 0.8em 0;
+    margin: 0 0 0 0;
+}
+
+.td-page-content blockquote.instagram-media p, 
+.td-post-content blockquote.instagram-media p, 
+.mce-content-body blockquote.instagram-media p, 
+.comment-content blockquote.instagram-media p {
+    font-family: inherit!important;
+    font-size: inherit!important;
+    line-height: inherit!important;
+    font-weight: inherit!important;
+    font-style: inherit!important;
+    text-align: inherit!important;
+    text-transform: none!important;
+    color: inherit!important;
+    border-top: none!important;
+    border-bottom: none!important;
+    padding: inherit!important;
+    margin: inherit!important;
+}
+
+.td-page-content blockquote:not(.instagram-media) p:before, 
+.td-post-content blockquote:not(.instagram-media) p:before, 
+.mce-content-body blockquote:not(.instagram-media) p:before, 
+.comment-content blockquote:not(.instagram-media) p:before {
+    content: "";
+    display: block;
+    background: url(https://www.kosmo.at/wp-content/themes/kosmo/images/zitat.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+    position: absolute;
+    top: -22px;
+}
+
+.td-page-content blockquote.instagram-media p:before, 
+.td-post-content blockquote.instagram-media p:before, 
+.mce-content-body blockquote.instagram-media p:before, 
+.comment-content blockquote.instagram-media p:before {
+    display: none!important;
+}
+
+.td-page-content blockquote:not(.instagram-media) span, 
+.td-post-content blockquote:not(.instagram-media) span, 
+.mce-content-body blockquote:not(.instagram-media) span, 
+.comment-content blockquote:not(.instagram-media) span,
+
+.td-page-content blockquote.wp-block-quote cite,
+.td-post-content blockquote.wp-block-quote cite,
+.mce-content-body blockquote.wp-block-quote cite, 
+.comment-content blockquote.wp-block-quote cite,
+
+.wp-block-quote:not(.is-large):not(.is-style-large) .wp-block-quote__citation {
+    font-family: Roboto Condensed,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    text-transform: none!important;
+    color: #444;
+}
+
+/* Single Post: Datum & Views ausblenden */
+
+.post .meta-info {
+	/*display: none;*/
+}
+
+/* Single Post: Pfad raus am Handy */
+@media (max-width: 767px) {
+	.post .entry-crumbs {
+		display: none;
+	}
+}
+
+
+/* Pagnavi */
+
+/* WP-Pagenavi */
+
+.wp-pagenavi {
+    padding: 1em 3px 1em 3px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	margin: 1em 0 2em 0;
+	overflow: auto;
+	font-size: 1.2em;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+    text-decoration: none;
+    border: 1px solid #BFBFBF;
+    padding: 5px 5px;
+	display: block;
+	float: left; 
+}
+
+
+.wp-pagenavi a {
+	background-color: #ad181a;
+	color: #fff;
+	border: 1px solid #fff;
+	transition: all .3s ease-in-out;
+	margin: 4px 2px 0 2px;
+	padding: 0;
+}
+
+.wp-pagenavi > span {
+	margin: 5px 2px 0 2px;
+}
+
+.wp-pagenavi a.page {
+	padding: 5px 5px;
+}
+
+.wp-pagenavi a.page:hover {
+	text-decoration: none!important;
+	border: 1px solid #222;
+	padding: 5px 7px;
+}
+
+
+.wp-pagenavi span.pages {
+    border: none;
+}
+
+.wp-pagenavi span.current {
+	background-color: #eee;
+    font-weight: bold;
+	border: none;
+	color: #222222;
+}
+
+.wp-pagenavi .nextpostslink,
+.wp-pagenavi .previouspostslink {
+	background-color: #ad181a;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+	display: block;
+	border: 1px solid #fff;
+	transition: all .3s ease-in-out;
+}
+
+.wp-pagenavi .nextpostslink {
+	float: right;
+	clear: left;
+}
+
+.wp-pagenavi a.last {
+	float: right;
+}
+
+.wp-pagenavi a.nextpostslink:hover,
+.wp-pagenavi a.previouspostslink:hover {
+	text-decoration: none!important;
+	padding: 5px 13px 5px 13px;
+	border: 1px solid #222;
+}
+
+.wp-pagenavi a.page:nth-child(1) {
+  clear: left;
+}
+
+.wp-pagenavi a.previouspostslink {
+	clear: right;
+}
+
+/*.wp-pagenavi a:not(.page) + .page { clear: left; } */
+
+/* Umfragen */
+
+.wp-polls{    border-radius: 3px!important;
+    background: #ececec!important;
+    width: 100%!important;
+    padding: 20px 20px!important;margin-bottom:30px!important;}
+
+.wp-polls p[style="text-align: left;"]{text-transform:uppercase!important;color:rgb(173, 24, 26); font-family:Open Sans,arial,sans-serif;}
+
+.wp-polls-ul{margin-left:0px!important;padding-left:0px!important;}
+.wp-polls ul li, .wp-polls-ul li, .wp-polls-ans ul li{margin-left:0px!important;margin-bottom:10px!important;    background: #FFF;
+    border-radius: 3px;
+    padding: 10px 17px!important;}
+.wp-polls .Buttons{background:#ad181a!important;padding:10px;border:none!important;}
+
+.wp-polls-ans p:last-of-type{text-align:left!important;margin-bottom:0px!important;}
+
+
+/* Zurück nach oben */
+
+.td-scroll-up {
+    bottom: 40px!important;
+}
+
+/* Related Posts */
+
+.crp_related_shortcode  {
+    background-color: #ececec;
+    padding: 0;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+overflow: auto;
+}
+
+.crp_related_shortcode h2 {
+    color: rgb(173, 24, 26);
+    font-size: 17px;
+    line-height: 120%;
+    margin: 0px 20px;
+    padding-top: 10px;
+    font-weight: bold;
+   text-transform: uppercase;
+}
+
+.crp_related_shortcode ul {
+list-style-type: none;
+list-style-position: inside;
+margin-bottom: 0px;
+}
+
+.crp_related_shortcode ul li {
+    list-style-image: none;
+    overflow: auto!important;
+    margin: 0 21px 10px 21px;
+}
+
+.crp_related_shortcode ul.shortlist li {
+    list-style-image: url(./images/list_image1.jpg);
+    overflow: visible;
+    margin: 0 21px 10px 21px;
+}
+
+.crp_related_shortcode ul.shortlist li:nth-child(1) {
+    list-style-image: url(./images/list_image3.jpg);
+}
+.crp_related_shortcode ul.shortlist li:nth-child(2) {
+    list-style-image: url(./images/list_image2.jpg);
+}
+
+.crp_related_shortcode ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none!important;
+    color: rgb(173, 24, 26);
+}
+
+.crp_related_shortcode ul.shortlist li a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline!important;
+    color: black;
+}
+
+.crp_related_shortcode ul li img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 6px 10px 0px 0px;
+}
+
+.crp_related_shortcode ul.shortlist li img {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 0px 10px;
+}
+
+.crp_related_shortcode ul span.crp_date {
+   display: table;
+   margin-left: 0px;
+   font-size: 10px;
+      line-height: 1em;
+}
+
+.crp_related_shortcode ul.shortlist span.crp_date {
+   display: table;
+   margin-left: 18px;
+   font-size: 10px;
+      line-height: 1em;
+}
+
+.crp_related_shortcode ul span.crp_title {
+   margin: 0;
+   line-height: 1.3em;
+}
+
+.crp_related_shortcode ul span.crp_excerpt {
+   display: table;
+   margin: 10px 0 0 0;
+   line-height: 1.3em;
+}
+
+.rp4wp-related-posts {
+	display: none!important;
+}
+
+/* Sidebar: grauer Hintergrund für manche Blöcke */
+
+.sidebar-block-dunkel {
+    background-color: #cccccc;
+}
+
+.sidebar-block-hell {
+    background-color: #ffffff;
+}
+
+/* Sidebar: Farbe der Textwidget-Titel */
+
+.block-title > a, .block-title > span {
+    color: #fff;
+    background-color: #ad181a;
+}
+
+/* Sidebar: Trennlinie zwischen Beiträgen */
+
+.td_block_widget .td-block-span12 .td_module_6:before{
+    content: '';
+    display: block;
+    background-color: transparent;
+}
+
+.td-block-span12 .td_module_6:before{
+    content: '';
+    display: block;
+    height: 17px;
+    background-color: #FFF;
+    margin-top: 15px;
+    border-top: 1px solid #bbb;
+}
+
+/* Sidebar: einige Borders weg */
+
+.vc_widget_sidebar .td-pb-border-top {
+    border-top: none!important;
+}
+
+.td-main-sidebar .td-pb-border-top {
+    border-top: none!important;
+}
+
+/* Gewinnspiel-Formular: Textfeld mit Absender-URL ausblenden */
+
+.wpcf7-text.absender-url { display:none!important; }
+
+/* Footer: Border oberhalb */
+
+.td-footer-container.td-container {
+    border-bottom-width: 0;
+    border-top: 6px solid #AD181A;
+}
+
+/* Footer: Styles für Menü nachjustieren */
+
+.td-footer-container .td-pb-row:first-child {
+	display: none;
+}
+
+/* Werbeplätze */
+
+.adslot.ad-sticky_bottom {
+  /*height: 90px;
+  width: 728px;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.adslot.skyscraper-1-right- {
+	margin-top: 150px;
+	height:600px;
+}
+
+.adslot.billboard {
+	height:250px; 
+	width:auto;
+	margin: 0 !important;
+	text-align: center;
+}
+
+.adslot.div-gpt-ad-1432626416018-8 { /* Header */
+
+}
+
+.adslot.ad-contentad-artikel {
+	margin: 10px auto;
+}
+
+.adslot.ad-understitial {
+	margin: 10px auto;
+}
+
+.adslot.ad-contentad-1,
+.adslot.ad-contentad-2 {
+	
+}
+
+.adslot.banner-inner-position { 
+	position: fixed; 
+	}
+	
+/* Suche mobil */
+
+.td-search-wrap-mob .td-search-input span {
+    opacity: 1!important;
+    font-size: 18px!important;
+	font-weight: bold!important;
+    color: #ad181a!important;
+}
+
+.td-search-wrap-mob #td-header-search-mob {
+    color: #222!important;
+    background: #fff!important;
+    border: 1px solid #666666!important;
+}
+
+.td-search-close .td-icon-close-mobile {
+    color: #222!important;
+}
+
+.td-search-wrap-mob .td_module_wrap .entry-title a {
+    color: #222!important;
+}
+
+.td-search-wrap-mob .td-post-date {
+    display: none;
+}
+	
+	
+
+@media (min-width: 767px) { 
+	.td-footer-container .td-pb-row:first-child {
+		display: block;
+	}
+	
+	.td-footer-container {
+	   padding: 1px 0 20px 0!important;
+	}
+
+	.td-footer-container .menu-glavni-menu-container {
+		padding: 0px 0 20px 0;
+		overflow: auto;
+	}
+	
+	.td-footer-container .sub-menu {
+		display: none!important;
+	}
+
+}
+
+
+
+
+/* CMP Cookie Bar */
+
+.qc-cmp-button {
+  background-color: #ad181a !important;
+  border-color: #ad181a !important;
+}
+.qc-cmp-button:hover {
+  background-color: transparent !important;
+  border-color: #ad181a !important;
+  color: #ad181a !important;
+}
+.qc-cmp-alt-action,
+.qc-cmp-link {
+  color: #ad181a !important;
+}
+.qc-cmp-button {
+  color: #ffffff !important;
+}
+.qc-cmp-button.qc-cmp-secondary-button {
+  color: #333333 !important;
+}
+.qc-cmp-button.qc-cmp-button.qc-cmp-secondary-button:hover {
+  color:#333333 !important;
+  
+}
+.qc-cmp-button.qc-cmp-secondary-button {
+  border-color: #f4f4f4 !important;
+  background-color: transparent !important;
+}
+.qc-cmp-button.qc-cmp-secondary-button:hover {
+  background-color: #f4f4f4 !important;
+}
+.qc-cmp-ui,
+.qc-cmp-ui .qc-cmp-main-messaging,
+.qc-cmp-ui .qc-cmp-messaging,
+.qc-cmp-ui .qc-cmp-beta-messaging,
+.qc-cmp-ui .qc-cmp-title,
+.qc-cmp-ui .qc-cmp-sub-title,
+.qc-cmp-ui .qc-cmp-purpose-info,
+.qc-cmp-ui .qc-cmp-table,
+.qc-cmp-ui .qc-cmp-table-header,
+.qc-cmp-ui .qc-cmp-vendor-list,
+.qc-cmp-ui .qc-cmp-vendor-list-title {
+    color: #222222 !important;
+}
+.qc-cmp-ui a,
+.qc-cmp-ui .qc-cmp-alt-action {
+  color: #ad181a !important;
+}
+.qc-cmp-ui {
+    background-color: #ffffff !important;
+}
+.qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+  background-color: #fafafa !important;
+}
+.qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+  background-color: #ffffff !important;
+}
+.qc-cmp-small-toggle.qc-cmp-toggle-on,
+.qc-cmp-toggle.qc-cmp-toggle-on {
+    background-color: #ad181a !important;
+    border-color: #ad181a !important;
+}
+
+
+@media (max-width: 767px) {
+	/* Mindesthöhe für Big Grid Bilder am Handy */
+	.td_block_big_grid .td-big-thumb {
+		min-height: 250px!important;
+		height: 30vh!important;
+	}
+}
+
